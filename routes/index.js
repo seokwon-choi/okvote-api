@@ -6,8 +6,4 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/api', function(req, res, next) {
-  res.json({ title: 'Hello OKVote' });
-});
-
 module.exports = router;
