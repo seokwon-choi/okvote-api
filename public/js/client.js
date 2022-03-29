@@ -59,9 +59,9 @@ function del() {
 }
 
 window.onload = function () {
-  const form = document.getElementById('uploadForm');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    const form = document.getElementById('uploadForm');
     const formData = new FormData(form);
     fetch('/api/upload', {
       method: 'POST',
