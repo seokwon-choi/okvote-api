@@ -57,3 +57,21 @@ function del() {
       showResult(json);
     });
 }
+
+window.onload = function () {
+  const form = document.getElementById('uploadForm');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('/api/upload', {
+      method: 'POST',
+      body: formData,
+    })
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (json) {
+        showResult(json);
+      });
+  });
+}
