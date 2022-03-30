@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "apiclient",
+			"path": "../../../apiclient"
+		},
+		{
+			"name": "okvote-api",
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}
